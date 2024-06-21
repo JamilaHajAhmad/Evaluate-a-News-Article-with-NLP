@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
