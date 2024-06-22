@@ -23,7 +23,8 @@
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.10",
     "url-loader": "^4.1.1",
-    "webpack-dev-server": "^5.0.4"
+    "webpack-dev-server": "^5.0.4",
+    "workbox-webpack-plugin": "^7.1.0"
   },
   "scripts": {
     "test": "jest",
