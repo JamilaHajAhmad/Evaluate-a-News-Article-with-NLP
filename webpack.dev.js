@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { type } = require('os');
 
 module.exports = {
     entry: './src/client/index.js',
@@ -26,7 +27,19 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ]
-            }
+            },
+            {
+                test: /\.(png|jpg|svg|gif|jpeg)$/i,
+                use: [
+                    {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 8192,
+                        name: 'src/client/images/[name].[ext]'
+                    }
+            }],
+            type: 'asset/resource'
+        }
         ]
     },
     plugins: [

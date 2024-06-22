@@ -24,7 +24,19 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ]
-            }
+            },
+            {
+                test: /\.(png|jpg|svg|gif|jpeg)$/i,
+                use: [
+                    {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 8192,
+                        name: 'src/client/images/[name].[ext]'
+                    }
+            }],
+            type: 'asset/resource'
+        }
         ]
     },
     plugins: [
