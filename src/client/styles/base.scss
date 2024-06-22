@@ -2,9 +2,6 @@
 section {
     padding: 60px;
     position: relative;
-}
-
-section {
 
     h2 {
         position: absolute;
@@ -25,9 +22,6 @@ section:last-of-type {
         margin: 150px auto;
         font-size: 25px;
     }
-}
-
-section:last-of-type {
 
     div {
         text-align: center;
@@ -44,4 +38,5 @@ section:last-of-type {
         -o-border-radius: 3px;
         border: 1px solid #4C3BCF;
     }
+
 }
