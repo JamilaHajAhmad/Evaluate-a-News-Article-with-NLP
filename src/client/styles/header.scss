@@ -2,4 +2,98 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
+    border-bottom: 1px solid #eee;
 }
+header {
+    img {
+        max-width: 8%;
+        height: auto;
+    }
+}
+
+header {
+    nav  {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+    }
+} 
+header {
+    nav {
+        ul  {
+            li {
+                padding: 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+} 
+header {
+    nav {
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    cursor: pointer;
+                    transition: all 1s;
+                    -webkit-transition: all 1s;
+                    -moz-transition: all 1s;
+                    -ms-transition: all 1s;
+                    -o-transition: all 1s;
+                    position: relative;
+                }
+            }
+        }
+    }
+} 
+header {
+    nav  {
+        ul  {
+            li {
+                a:hover {
+                    color: #4C3BCF;
+                }
+            }
+        }
+    }
+}
+header  {
+    nav  {
+        ul  {
+            li  {
+                a::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: #4C3BCF;
+                    transition: 1s;
+                    -webkit-transition: 1s;
+                    -moz-transition: 1s;
+                    -ms-transition: 1s;
+                    -o-transition: 1s;
+                }
+            }
+        }
+    }
+}
+header {
+    nav  {
+        ul  {
+            li  {
+                a:hover::after {
+                    width: 100%;
+                    height: 2px;
+                }
+            }
+        }
+    }
+} 
